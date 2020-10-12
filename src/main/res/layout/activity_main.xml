@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="달력이 나오는 페이지"
-/>
 
+    <Button
+        android:id="@+id/go_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "시간 설정"
+        android:onClick="go_to_setting"/>
 </LinearLayout>
 

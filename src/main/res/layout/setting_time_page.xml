@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:shrinkColumns="4"
+    android:stretchColumns="4">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/hourInc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="+"/>
+        <TextView
+            android:id="@+id/hourNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"/>
+        <Button
+            android:id="@+id/hourDec"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="-"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/minInc"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:onClick="mOnClick"
+        android:text="+"/>
+    <TextView
+        android:id="@+id/minNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="시간 설정 페이지"/>
+        android:text="분"/>
+    <Button
+        android:id="@+id/minDec"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:onClick="mOnClick"
+        android:text="-"/>
 
-</LinearLayout>
+    </TableRow>
+
+
+</TableLayout>
